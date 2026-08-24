@@ -1,0 +1,54 @@
+{
+  "name": "bank-of-jamaica-exchange-rate",
+  "version": "1.2.7",
+  "description": "Official Bank of Jamaica (Jamaica) daily exchange rates — 123 currencies vs JMD, history since 2000. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "bojm",
+    "bank",
+    "of",
+    "jamaica",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "jmd",
+    "central-bank",
+    "official-rates",
+    "jamaica",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/bojm/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/bank-of-jamaica-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/bank-of-jamaica-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
