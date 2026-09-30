@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'JMD', { apiKey: 'art_live_...' });
 {
   bank: 'bojm',
   name: 'Bank of Jamaica',
-  rate_date: '2026-09-09',   // Bank of Jamaica's own publication date
+  rate_date: '2026-09-25',   // Bank of Jamaica's own publication date
   source: 'USD',
   target: 'JMD',
-  rate: 158.6535,
+  rate: 159.1559,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -113,10 +113,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bojm',
   name: 'Bank of Jamaica',
-  rate_date: '2026-09-09',
+  rate_date: '2026-09-25',
   rates: [
-    { "base": "USD", "quote": "JMD", "type": "sell", "value": 158.6535 },
-    { "base": "USD", "quote": "JMD", "type": "buy", "value": 157.3216 },
+    { "base": "USD", "quote": "JMD", "type": "sell", "value": 159.1559 },
+    { "base": "USD", "quote": "JMD", "type": "buy", "value": 157.4394 },
     // … the rest of the published table (123 currencies vs JMD)
   ],
   disclaimer: '…'
@@ -156,7 +156,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-of-jamaica-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'JMD', from: '2026-01-01', to: '2026-09-09' },
+  { source: 'USD', target: 'JMD', from: '2026-01-01', to: '2026-09-25' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -169,11 +169,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'JMD',
   from: '2026-01-01',
-  to: '2026-09-09',
+  to: '2026-09-25',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-09', rate: 158.6535, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-09-25', rate: 159.1559, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
