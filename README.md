@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bank-of-jamaica-exchange-rate.svg)](https://github.com/AllRates-Today/bank-of-jamaica-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bank-of-jamaica-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/JMD today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbojm%3Fsource%3DUSD%26target%3DJMD&query=%24.rate&label=USD%2FJMD%20published%20by%20Bank%20of%20Jamaica&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bojm/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbojm%3Fsource%3DUSD%26target%3DJMD&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bojm/)
 
 **Official Bank of Jamaica (Jamaica) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank of Jamaica itself prints, every business day.**
 
@@ -32,6 +34,79 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank of Jamaica table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | JMD | buy | 42.96229 |
+| AED | JMD | sell | 43.50568 |
+| ALL | JMD | buy | 1.92073 |
+| ALL | JMD | sell | 1.94502 |
+| AOA | JMD | buy | 0.17256 |
+| AOA | JMD | sell | 0.17474 |
+| ARS | JMD | buy | 0.10364 |
+| ARS | JMD | sell | 0.10495 |
+| AUD | JMD | buy | 109.85962 |
+| AUD | JMD | sell | 111.24912 |
+| AWG | JMD | buy | 88.1495 |
+| AWG | JMD | sell | 89.26441 |
+| AZN | JMD | buy | 92.78894 |
+| AZN | JMD | sell | 93.96254 |
+| BAM | JMD | buy | 90.30625 |
+| BAM | JMD | sell | 91.44845 |
+| BBD | JMD | buy | 78.8938 |
+| BBD | JMD | sell | 79.89165 |
+| BDT | JMD | buy | 1.281 |
+| BDT | JMD | sell | 1.29721 |
+| BGN | JMD | buy | 90.30625 |
+| BGN | JMD | sell | 91.44845 |
+| BHD | JMD | buy | 418.36829 |
+| BHD | JMD | sell | 423.65982 |
+| BIF | JMD | buy | 0.05258 |
+| BIF | JMD | sell | 0.05325 |
+| BMD | JMD | buy | 157.7876 |
+| BMD | JMD | sell | 159.7833 |
+| BND | JMD | buy | 123.30046 |
+| BND | JMD | sell | 124.85997 |
+| BOB | JMD | buy | 13.18192 |
+| BOB | JMD | sell | 13.34865 |
+| BRL | JMD | buy | 31.57963 |
+| BRL | JMD | sell | 31.97905 |
+| BSD | JMD | buy | 157.7876 |
+| BSD | JMD | sell | 159.7833 |
+| BTN | JMD | buy | 1.63046 |
+| BTN | JMD | sell | 1.65108 |
+| BWP | JMD | buy | 11.00569 |
+| BWP | JMD | sell | 11.14489 |
+| BZD | JMD | buy | 78.8938 |
+| BZD | JMD | sell | 79.89165 |
+| CAD | JMD | buy | 111.443 |
+| CAD | JMD | sell | 113.7137 |
+| CDF | JMD | buy | 0.06824 |
+| CDF | JMD | sell | 0.0691 |
+| CHF | JMD | buy | 189.51189 |
+| CHF | JMD | sell | 191.90884 |
+| CLP | JMD | buy | 0.16121 |
+| CLP | JMD | sell | 0.16325 |
+| CNY | JMD | buy | 23.53405 |
+| CNY | JMD | sell | 23.83171 |
+| COP | JMD | buy | 0.04872 |
+| COP | JMD | sell | 0.04934 |
+| CRC | JMD | buy | 0.34575 |
+| CRC | JMD | sell | 0.35012 |
+| CUP | JMD | buy | 6.57448 |
+| CUP | JMD | sell | 6.65764 |
+| CZK | JMD | buy | 7.23143 |
+| CZK | JMD | sell | 7.32289 |
+
+[Full table on the Bank of Jamaica rates page](https://allratestoday.com/central-bank-rates-api/bojm/) · Source: [Official rates published by BOJM, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bojm/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
