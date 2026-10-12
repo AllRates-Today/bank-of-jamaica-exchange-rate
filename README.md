@@ -37,73 +37,75 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 
 ## 📈 Latest published table
 
-Today's full Bank of Jamaica table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+[![Latest Bank of Jamaica table](https://allratestoday.com/api/open/central-bank/bojm/table.svg)](https://allratestoday.com/central-bank-rates-api/bojm/)
+
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-09** by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-09.
+Published **2026-10-12** by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-12.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | JMD | buy | 43.14759 |
-| AED | JMD | sell | 43.5172 |
-| ALL | JMD | buy | 1.93611 |
-| ALL | JMD | sell | 1.95269 |
-| AOA | JMD | buy | 0.17281 |
-| AOA | JMD | sell | 0.17429 |
-| ARS | JMD | buy | 0.10431 |
-| ARS | JMD | sell | 0.1052 |
-| AUD | JMD | buy | 110.33495 |
-| AUD | JMD | sell | 111.28011 |
-| AWG | JMD | buy | 88.53089 |
-| AWG | JMD | sell | 89.28927 |
-| AZN | JMD | buy | 93.14933 |
-| AZN | JMD | sell | 93.94727 |
-| BAM | JMD | buy | 90.81132 |
-| BAM | JMD | sell | 91.58924 |
-| BBD | JMD | buy | 79.23515 |
-| BBD | JMD | sell | 79.9139 |
-| BDT | JMD | buy | 1.28524 |
-| BDT | JMD | sell | 1.29625 |
-| BGN | JMD | buy | 90.81132 |
-| BGN | JMD | sell | 91.58924 |
-| BHD | JMD | buy | 420.06706 |
-| BHD | JMD | sell | 423.66547 |
-| BIF | JMD | buy | 0.05282 |
-| BIF | JMD | sell | 0.05328 |
-| BMD | JMD | buy | 158.4703 |
-| BMD | JMD | sell | 159.8278 |
-| BND | JMD | buy | 123.70827 |
-| BND | JMD | sell | 124.76799 |
-| BOB | JMD | buy | 13.37302 |
-| BOB | JMD | sell | 13.48758 |
-| BRL | JMD | buy | 31.61818 |
-| BRL | JMD | sell | 31.88903 |
-| BSD | JMD | buy | 158.4703 |
-| BSD | JMD | sell | 159.8278 |
-| BTN | JMD | buy | 1.63732 |
-| BTN | JMD | sell | 1.65135 |
-| BWP | JMD | buy | 11.11669 |
-| BWP | JMD | sell | 11.21192 |
-| BZD | JMD | buy | 79.23515 |
-| BZD | JMD | sell | 79.9139 |
-| CAD | JMD | buy | 112.347 |
-| CAD | JMD | sell | 112.5561 |
-| CDF | JMD | buy | 0.06831 |
-| CDF | JMD | sell | 0.06889 |
-| CHF | JMD | buy | 190.27472 |
-| CHF | JMD | sell | 191.90466 |
-| CLP | JMD | buy | 0.16159 |
-| CLP | JMD | sell | 0.16297 |
-| CNY | JMD | buy | 23.63623 |
-| CNY | JMD | sell | 23.83871 |
-| COP | JMD | buy | 0.04914 |
-| COP | JMD | sell | 0.04956 |
-| CRC | JMD | buy | 0.34714 |
-| CRC | JMD | sell | 0.35012 |
-| CUP | JMD | buy | 6.60293 |
-| CUP | JMD | sell | 6.65949 |
-| CZK | JMD | buy | 7.28507 |
-| CZK | JMD | sell | 7.34748 |
+| AED | JMD | buy | 42.99159 |
+| AED | JMD | sell | 43.54457 |
+| ALL | JMD | buy | 1.92794 |
+| ALL | JMD | sell | 1.95274 |
+| AOA | JMD | buy | 0.1722 |
+| AOA | JMD | sell | 0.17442 |
+| ARS | JMD | buy | 0.10418 |
+| ARS | JMD | sell | 0.10552 |
+| AUD | JMD | buy | 110.1409 |
+| AUD | JMD | sell | 111.55759 |
+| AWG | JMD | buy | 88.21682 |
+| AWG | JMD | sell | 89.35151 |
+| AZN | JMD | buy | 92.81887 |
+| AZN | JMD | sell | 94.01276 |
+| BAM | JMD | buy | 90.39333 |
+| BAM | JMD | sell | 91.55601 |
+| BBD | JMD | buy | 78.95405 |
+| BBD | JMD | sell | 79.9696 |
+| BDT | JMD | buy | 1.28302 |
+| BDT | JMD | sell | 1.29953 |
+| BGN | JMD | buy | 90.39333 |
+| BGN | JMD | sell | 91.55601 |
+| BHD | JMD | buy | 418.13346 |
+| BHD | JMD | sell | 423.51172 |
+| BIF | JMD | buy | 0.05279 |
+| BIF | JMD | sell | 0.05346 |
+| BMD | JMD | buy | 157.9081 |
+| BMD | JMD | sell | 159.9392 |
+| BND | JMD | buy | 123.23573 |
+| BND | JMD | sell | 124.82085 |
+| BOB | JMD | buy | 13.32558 |
+| BOB | JMD | sell | 13.49698 |
+| BRL | JMD | buy | 31.66522 |
+| BRL | JMD | sell | 32.07251 |
+| BSD | JMD | buy | 157.9081 |
+| BSD | JMD | sell | 159.9392 |
+| BTN | JMD | buy | 1.63244 |
+| BTN | JMD | sell | 1.65344 |
+| BWP | JMD | buy | 11.14042 |
+| BWP | JMD | sell | 11.28371 |
+| BZD | JMD | buy | 78.95405 |
+| BZD | JMD | sell | 79.9696 |
+| CAD | JMD | buy | 112.9356 |
+| CAD | JMD | sell | 113.1713 |
+| CDF | JMD | buy | 0.06806 |
+| CDF | JMD | sell | 0.06894 |
+| CHF | JMD | buy | 189.94178 |
+| CHF | JMD | sell | 192.38492 |
+| CLP | JMD | buy | 0.16141 |
+| CLP | JMD | sell | 0.16349 |
+| CNY | JMD | buy | 23.58985 |
+| CNY | JMD | sell | 23.89328 |
+| COP | JMD | buy | 0.04947 |
+| COP | JMD | sell | 0.05011 |
+| CRC | JMD | buy | 0.34782 |
+| CRC | JMD | sell | 0.35229 |
+| CUP | JMD | buy | 6.5795 |
+| CUP | JMD | sell | 6.66413 |
+| CZK | JMD | buy | 7.25249 |
+| CZK | JMD | sell | 7.34578 |
 
 [Full table on the Bank of Jamaica rates page](https://allratestoday.com/central-bank-rates-api/bojm/) · Source: [Official rates published by BOJM, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bojm/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -160,10 +162,10 @@ const pair = await getRate('USD', 'JMD', { apiKey: 'art_live_...' });
 {
   bank: 'bojm',
   name: 'Bank of Jamaica',
-  rate_date: '2026-10-08',   // Bank of Jamaica's own publication date
+  rate_date: '2026-10-12',   // Bank of Jamaica's own publication date
   source: 'USD',
   target: 'JMD',
-  rate: 159.7833,
+  rate: 159.9392,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -188,10 +190,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bojm',
   name: 'Bank of Jamaica',
-  rate_date: '2026-10-08',
+  rate_date: '2026-10-12',
   rates: [
-    { "base": "USD", "quote": "JMD", "type": "sell", "value": 159.7833 },
-    { "base": "USD", "quote": "JMD", "type": "buy", "value": 157.7876 },
+    { "base": "USD", "quote": "JMD", "type": "sell", "value": 159.9392 },
+    { "base": "USD", "quote": "JMD", "type": "buy", "value": 157.9081 },
     // … the rest of the published table (123 currencies vs JMD)
   ],
   disclaimer: '…'
@@ -231,7 +233,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-of-jamaica-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'JMD', from: '2026-01-01', to: '2026-10-08' },
+  { source: 'USD', target: 'JMD', from: '2026-01-01', to: '2026-10-12' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -244,11 +246,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'JMD',
   from: '2026-01-01',
-  to: '2026-10-08',
+  to: '2026-10-12',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-08', rate: 159.7833, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-12', rate: 159.9392, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -298,6 +300,7 @@ curl "https://allratestoday.com/api/v1/central-bank/bojm/latest?format=xml&api_k
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('bojm')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate bojm ...` command
+- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
