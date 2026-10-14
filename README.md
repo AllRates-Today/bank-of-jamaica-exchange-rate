@@ -42,7 +42,7 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-13** by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-13.
+Published **2026-10-13** by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -162,10 +162,10 @@ const pair = await getRate('USD', 'JMD', { apiKey: 'art_live_...' });
 {
   bank: 'bojm',
   name: 'Bank of Jamaica',
-  rate_date: '2026-10-12',   // Bank of Jamaica's own publication date
+  rate_date: '2026-10-13',   // Bank of Jamaica's own publication date
   source: 'USD',
   target: 'JMD',
-  rate: 159.9392,
+  rate: 159.9674,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -190,10 +190,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bojm',
   name: 'Bank of Jamaica',
-  rate_date: '2026-10-12',
+  rate_date: '2026-10-13',
   rates: [
-    { "base": "USD", "quote": "JMD", "type": "sell", "value": 159.9392 },
-    { "base": "USD", "quote": "JMD", "type": "buy", "value": 157.9081 },
+    { "base": "USD", "quote": "JMD", "type": "sell", "value": 159.9674 },
+    { "base": "USD", "quote": "JMD", "type": "buy", "value": 157.9396 },
     // … the rest of the published table (123 currencies vs JMD)
   ],
   disclaimer: '…'
@@ -233,7 +233,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-of-jamaica-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'JMD', from: '2026-01-01', to: '2026-10-12' },
+  { source: 'USD', target: 'JMD', from: '2026-01-01', to: '2026-10-13' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -246,11 +246,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'JMD',
   from: '2026-01-01',
-  to: '2026-10-12',
+  to: '2026-10-13',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-12', rate: 159.9392, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-13', rate: 159.9674, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
