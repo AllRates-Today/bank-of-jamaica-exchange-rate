@@ -47,7 +47,7 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-16 by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-19.</summary>
+<summary>Table as text: published 2026-10-16 by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-20.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
