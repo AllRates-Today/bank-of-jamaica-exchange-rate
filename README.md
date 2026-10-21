@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/bojm').th
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,70 +47,70 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-16 by Bank of Jamaica (the API currently flags this table as stale) — 246 rates, first 60 shown. Updated 2026-10-21.</summary>
+<summary>Table as text: published 2026-10-21 by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | JMD | buy | 43.0231 |
-| AED | JMD | sell | 43.33706 |
-| ALL | JMD | buy | 1.93909 |
-| ALL | JMD | sell | 1.95324 |
-| AOA | JMD | buy | 0.17233 |
-| AOA | JMD | sell | 0.17359 |
-| ARS | JMD | buy | 0.10437 |
-| ARS | JMD | sell | 0.10513 |
-| AUD | JMD | buy | 109.3777 |
-| AUD | JMD | sell | 110.17588 |
-| AWG | JMD | buy | 88.28268 |
-| AWG | JMD | sell | 88.92693 |
-| AZN | JMD | buy | 92.88817 |
-| AZN | JMD | sell | 93.56602 |
-| BAM | JMD | buy | 90.49967 |
-| BAM | JMD | sell | 91.1601 |
-| BBD | JMD | buy | 79.013 |
-| BBD | JMD | sell | 79.5896 |
-| BDT | JMD | buy | 1.28476 |
-| BDT | JMD | sell | 1.29414 |
-| BGN | JMD | buy | 90.49967 |
-| BGN | JMD | sell | 91.1601 |
-| BHD | JMD | buy | 418.44565 |
-| BHD | JMD | sell | 421.49927 |
-| BIF | JMD | buy | 0.05282 |
-| BIF | JMD | sell | 0.0532 |
-| BMD | JMD | buy | 158.026 |
-| BMD | JMD | sell | 159.1792 |
-| BND | JMD | buy | 123.20755 |
-| BND | JMD | sell | 124.10666 |
-| BOB | JMD | buy | 13.52962 |
-| BOB | JMD | sell | 13.62836 |
-| BRL | JMD | buy | 31.34162 |
-| BRL | JMD | sell | 31.57033 |
-| BSD | JMD | buy | 158.026 |
-| BSD | JMD | sell | 159.1792 |
-| BTN | JMD | buy | 1.66251 |
-| BTN | JMD | sell | 1.67465 |
-| BWP | JMD | buy | 11.10133 |
-| BWP | JMD | sell | 11.18234 |
-| BZD | JMD | buy | 79.013 |
-| BZD | JMD | sell | 79.5896 |
-| CAD | JMD | buy | 111.8695 |
-| CAD | JMD | sell | 112.3384 |
-| CDF | JMD | buy | 0.06811 |
-| CDF | JMD | sell | 0.06861 |
-| CHF | JMD | buy | 190.54199 |
-| CHF | JMD | sell | 191.93248 |
-| CLP | JMD | buy | 0.16062 |
-| CLP | JMD | sell | 0.16179 |
-| CNY | JMD | buy | 23.62123 |
-| CNY | JMD | sell | 23.7936 |
-| COP | JMD | buy | 0.04994 |
-| COP | JMD | sell | 0.0503 |
-| CRC | JMD | buy | 0.34923 |
-| CRC | JMD | sell | 0.35178 |
-| CUP | JMD | buy | 6.58442 |
-| CUP | JMD | sell | 6.63247 |
-| CZK | JMD | buy | 7.27053 |
-| CZK | JMD | sell | 7.32358 |
+| AED | JMD | buy | 42.9798 |
+| AED | JMD | sell | 43.39954 |
+| ALL | JMD | buy | 1.9568 |
+| ALL | JMD | sell | 1.97591 |
+| AOA | JMD | buy | 0.17215 |
+| AOA | JMD | sell | 0.17383 |
+| ARS | JMD | buy | 0.1035 |
+| ARS | JMD | sell | 0.10451 |
+| AUD | JMD | buy | 110.67112 |
+| AUD | JMD | sell | 111.75193 |
+| AWG | JMD | buy | 88.19263 |
+| AWG | JMD | sell | 89.05391 |
+| AZN | JMD | buy | 92.82888 |
+| AZN | JMD | sell | 93.73545 |
+| BAM | JMD | buy | 90.76863 |
+| BAM | JMD | sell | 91.65507 |
+| BBD | JMD | buy | 78.9324 |
+| BBD | JMD | sell | 79.70325 |
+| BDT | JMD | buy | 1.28267 |
+| BDT | JMD | sell | 1.2952 |
+| BGN | JMD | buy | 90.76863 |
+| BGN | JMD | sell | 91.65507 |
+| BHD | JMD | buy | 418.5175 |
+| BHD | JMD | sell | 422.60472 |
+| BIF | JMD | buy | 0.05259 |
+| BIF | JMD | sell | 0.0531 |
+| BMD | JMD | buy | 157.8648 |
+| BMD | JMD | sell | 159.4065 |
+| BND | JMD | buy | 123.60225 |
+| BND | JMD | sell | 124.80935 |
+| BOB | JMD | buy | 13.49272 |
+| BOB | JMD | sell | 13.62449 |
+| BRL | JMD | buy | 31.49454 |
+| BRL | JMD | sell | 31.80211 |
+| BSD | JMD | buy | 157.8648 |
+| BSD | JMD | sell | 159.4065 |
+| BTN | JMD | buy | 1.66301 |
+| BTN | JMD | sell | 1.67926 |
+| BWP | JMD | buy | 11.08211 |
+| BWP | JMD | sell | 11.19034 |
+| BZD | JMD | buy | 78.9324 |
+| BZD | JMD | sell | 79.70325 |
+| CAD | JMD | buy | 113.2463 |
+| CAD | JMD | sell | 113.853 |
+| CDF | JMD | buy | 0.0683 |
+| CDF | JMD | sell | 0.06897 |
+| CHF | JMD | buy | 191.22379 |
+| CHF | JMD | sell | 193.09127 |
+| CLP | JMD | buy | 0.16185 |
+| CLP | JMD | sell | 0.16343 |
+| CNY | JMD | buy | 23.64892 |
+| CNY | JMD | sell | 23.87987 |
+| COP | JMD | buy | 0.04982 |
+| COP | JMD | sell | 0.05031 |
+| CRC | JMD | buy | 0.35018 |
+| CRC | JMD | sell | 0.3536 |
+| CUP | JMD | buy | 6.5777 |
+| CUP | JMD | sell | 6.64194 |
+| CZK | JMD | buy | 7.30578 |
+| CZK | JMD | sell | 7.37713 |
 
 </details>
 
