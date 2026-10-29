@@ -47,7 +47,7 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-28 by Bank of Jamaica — 246 rates, first 60 shown. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -276,6 +276,7 @@ The Bank of Jamaica publishes daily indicative buying and selling rates for well
 
 - Publisher's own page: [Indicative exchange rates](https://boj.org.jm/market/foreign-exchange/indicative-rates/) · [boj.org.jm](https://boj.org.jm)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Bank of Jamaica rates page](https://allratestoday.com/central-bank-rates-api/bojm/)
+- In the API: usually by **17:20 UTC** (measured over the last 9 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
